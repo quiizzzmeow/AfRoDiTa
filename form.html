@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="commentsForm">
+        <div class="containerSmall">
+            <div class="form">
+                <div class="titleBlock">Оставить отзыв</div>
+                <form action="" method="post">
+                    <div class="formRow">
+                        <div class="formItem">
+                            <div class="formName">Ваше имя</div>
+                            <input type="text" name="name" placeholder="Тимофей" class="formInput">
+                        </div>
+                        <div class="formItem">
+                            <div class="formName">Ссылка на профиль в vk</div>
+                            <input type="text" name="vk" placeholder="vk.com/example" class="formInput">
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formItem text">
+                            <div class="formName">Текст отзыва</div>
+                            <textarea name="mnenie" class="formInput txt" placeholder="Мне понравилось"></textarea>
+                        </div>
+                    </div>
+                    <div class="formRow">
+                        <div class="formItem">
+                            <div class="formName">Использовать фото в отзыве</div>
+                            <div class="formButtons">
+                                <label>
+                                    <input type="radio" class="formButton" name="foto" checked>
+                                    <span class="radioFake"></span>
+                                    <span class="formText">Да</span>
+                                </label>
+                                <label>
+                                    <input type="radio" class="formButton" name="foto">
+                                    <span class="radioFake"></span>
+                                    <span class="formText">Нет</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="formItem">
+                            <input type="submit" class="formSubmit" value="Отправить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
