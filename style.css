@@ -344,7 +344,7 @@ footer{
     justify-content: left;
 }
 .box{
-    width: 880px;
+    max-width: 880px;
     margin: auto;
     font-family: Arial;
 }
@@ -357,8 +357,7 @@ footer{
     flex-wrap: wrap;
 }
 .listItem{
-    margin-right: 44px;
-    width: 267px;
+    width: 260px;
     margin-bottom: 40px;
 }
 .picture{
@@ -368,6 +367,9 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .title3{
     margin-bottom: 15px;
@@ -376,6 +378,7 @@ footer{
 }
 .picture::before{
     content: '';
+    color: #ffffff;
     display: block;
     position: absolute;
     top: 0;
@@ -383,6 +386,14 @@ footer{
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .fit{
     background-image: url(images/sports-1962574_1920.png);
@@ -390,7 +401,7 @@ footer{
 .diet{
     background-image: url(images/apple-841169_1920.png);
 }
-.uoga{
+.uega{
     background-image: url(images/yoga-1146277_1920.png);
 }
 .tpx{
@@ -400,5 +411,53 @@ footer{
     background-image: url(images/women-1621297_1920.png);
 }
 .buss{
-    background-image: url(images/);
+    background-image: url(images/swimming-78112_1920.png);
+}
+.fit::before{
+    content: 'фитнес';
+}
+.diet::before{
+    content: 'диетолог';
+}
+.uega::before{
+    content: 'йога';
+}
+.tpx::before{
+    content: 'петли tpx';
+}
+.cross::before{
+    content: 'кроссфит';
+}
+.buss::before{
+    content: 'бассейн';
+}
+.bottom2{
+    text-align: left;
+}
+.bottomBox{
+    width: 260px;
+}
+@media (max-width: 1200px){
+    .listItem{
+        width: calc(100% / 2 - 20px);
+    }
+    .bottomBox{
+        width: 260px;
+    }
+}
+@media (max-width: 992px){
+    .listItem{
+        width: calc(100% / 2 - 20px);
+    }
+    .bottomBox{
+        width: 260px;
+    }
+}
+@media (max-width: 768px){
+    .listItem{
+        width: calc(100% / 1 - 20px);
+    }
+    .bottomBox{
+        width: 260px;
+    }
 }
